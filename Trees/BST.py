@@ -5,7 +5,7 @@ The functions in this file are considerably harder than the functions in the Bin
 
 from Trees.BinaryTree import BinaryTree, Node
 
-class BST():
+class BST(BinaryTree):
     '''
     FIXME:
     BST is currently not a subclass of BinaryTree.
@@ -20,7 +20,7 @@ class BST():
         then each element of xs needs to be inserted into the BST.
         '''
         self.root = None
-        if xs:
+        if xs != None:
             self.insert_list(xs)
 
 
@@ -242,3 +242,4 @@ class BST():
         '''
         for i in xs:
             self.remove(i)
+
